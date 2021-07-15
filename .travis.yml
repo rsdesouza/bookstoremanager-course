@@ -2,7 +2,9 @@ dist: xenial
 language: java
 sudo: false
 jdk: openjdk11
-install: mvn install
+install: true
+script:
+  - mvn install
 cache:
   directories:
     - $HOME/.m2
